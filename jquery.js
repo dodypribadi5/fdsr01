@@ -1,5 +1,5 @@
 let tglNow = new Date();
-let waktuBatas = new Date("2025-08-24T23:59:59");
+let waktuBatas = new Date("2025-09-30T23:59:59");
 if (tglNow.getTime() >= waktuBatas.getTime()) {
   document.location.href = 'https://suspend-web.pages.dev';
 } else {
